@@ -1,3 +1,5 @@
+import Header from "./Header";
+import Todo from "./Todo";
 import "./App.css";
 
 const App = () => {
@@ -9,47 +11,18 @@ const App = () => {
       Hello, {name}! You are {thisYear - birthYear}.
     </div>
   );
+  const list1 = ["Do laundry", "Clean the kitchen", "Wash the dishes"];
+  const list2 = ["Do Homework", "Clean my room"];
 
   return (
     <div>
       {/* header */}
-      <header className="header">
-        <nav>
-          <a href="https://github.com/1234tgk">
-            <img
-              alt="GitHub Icon"
-              src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
-              className="icon"
-            />
-          </a>
-        </nav>
-
-        <div className="name">
-          <p>John Doe</p>
-        </div>
-      </header>
+      <Header name="John Doe" />
 
       {/* main */}
       <div className="main">
-        <div className="todo">
-          <h3 className="todo-header">To-Do List 1</h3>
-          <ul className="todo-list">
-            <li>Do laundry</li>
-            <li>Clean the kitchen</li>
-            <li>Wash them dishes</li>
-          </ul>
-        </div>
-
-        <div className="todo">
-          <h3 className="todo-header">To-Do List 2</h3>
-          <ul className="todo-list">
-            <li>Do laundry</li>
-            <li>Clean the kitchen</li>
-            <li>Wash them dishes</li>
-          </ul>
-        </div>
-
-        {element}
+        <Todo title="To-do List 1" list={list1} />
+        <Todo title="To-do List 2" list={list2} />
       </div>
     </div>
   );
