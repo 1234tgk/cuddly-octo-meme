@@ -3,28 +3,6 @@ body {
   margin: 0;
 }
 
-/* header */
-
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: cornflowerblue;
-  color: cornsilk;
-}
-
-.name {
-  margin-left: auto;
-  text-align: center;
-  font-size: 2.5rem;
-  padding-right: 0.5em;
-}
-
-.icon {
-  width: 25%;
-}
-
 /* main */
 
 .main {
@@ -34,16 +12,4 @@ header {
   flex-direction: column;
   font-size: 1.2rem;
   margin: 1em;
-}
-
-.todo {
-  border: solid green;
-  width: 50%;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-.todo-list {
-  list-style-type: none;
-  padding: 0;
 }

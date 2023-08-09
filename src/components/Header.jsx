@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+import "./Header.css";
+
 const Header = (props) => {
-  console.log(props.name);
   return (
     <header className="header">
       <nav>
@@ -10,11 +12,18 @@ const Header = (props) => {
             className="icon"
           />
         </a>
+        <Link to="/">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+            alt="Home"
+            className="icon"
+          />
+        </Link>
       </nav>
 
-      <div className="name">
+      <Link className="name" to="/profile">
         <p>{props.name}</p>
-      </div>
+      </Link>
     </header>
   );
 };

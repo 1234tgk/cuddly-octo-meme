@@ -1,5 +1,6 @@
+import "./Todo.css";
+
 const Todo = (props) => {
-  console.log(props);
   return (
     <div className="todo">
       <h3 className="todo-header">{props.title}</h3>
