@@ -5,6 +5,7 @@ import App from "./pages/App.jsx";
 import Profile from "./pages/Profile.jsx";
 import Count from "./pages/Count.jsx";
 import Timer from "./pages/Timer.jsx";
+import NumberAdder from "./pages/NumberAdder.jsx";
 
 // setup router
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/timer",
     element: <Timer />,
+  },
+  {
+    path: "/number-adder",
+    element: <NumberAdder />,
   },
 ]);
 
