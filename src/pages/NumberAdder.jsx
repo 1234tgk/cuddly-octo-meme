@@ -6,6 +6,16 @@ const NumberAdder = () => {
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
 
+  useEffect(() => {
+    if (isNaN(number1)) {
+      setNumber1(0);
+    }
+
+    if (isNaN(number2)) {
+      setNumber2(0);
+    }
+  }, [number1, number2]);
+
   return (
     <div>
       <Header name="John Doe" />
