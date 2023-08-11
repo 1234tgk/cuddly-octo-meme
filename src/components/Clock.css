@@ -1,0 +1,10 @@
+.clock {
+  width: 100%;
+  text-align: right;
+}
+
+.clock p {
+  line-height: 0;
+  font-size: 1.5rem;
+  padding-right: 1em;
+}
